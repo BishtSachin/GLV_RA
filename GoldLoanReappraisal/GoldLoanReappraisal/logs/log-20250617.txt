@@ -1,0 +1,1077 @@
+2025-06-17 15:43:18.065 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 15:43:18.399 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 15:43:18.400 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 15:43:18.434 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 15:43:18.436 +05:30 [INF] Hosting environment: Development
+2025-06-17 15:43:18.436 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 15:43:19.882 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58277%2Fdevtools%2Fbrowser%2Fffd322d6-3ef3-4faf-b3bc-d7efe37ef471 - null null
+2025-06-17 15:43:20.095 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58277%2Fdevtools%2Fbrowser%2Fffd322d6-3ef3-4faf-b3bc-d7efe37ef471 - 302 0 null 217.5253ms
+2025-06-17 15:43:20.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 15:43:20.384 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 15:43:20.424 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:43:20.576 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:43:20.858 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 15:43:20.861 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:43:20.862 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:43:20.873 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 580.6069ms
+2025-06-17 15:43:20.884 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:43:20.886 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:43:20.887 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:43:20.887 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 26.1648ms
+2025-06-17 15:43:20.902 +05:30 [INF] Sending file. Request path: '/GoldLoanReappraisal.styles.css'. Physical path: 'C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal\obj\Debug\net8.0\scopedcss\bundle\GoldLoanReappraisal.styles.css'
+2025-06-17 15:43:20.903 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 200 8808 text/css 41.6855ms
+2025-06-17 15:43:21.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:43:21.676 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:43:21.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 6.9621ms
+2025-06-17 15:43:21.712 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 15:43:21.723 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.7477ms
+2025-06-17 15:43:21.725 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:43:21.730 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:43:21.733 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 20.2049ms
+2025-06-17 15:43:21.744 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 15:43:21.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 15:43:21.751 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:43:21.756 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:43:21.760 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:43:21.762 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:43:21.763 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 18.7588ms
+2025-06-17 15:43:21.767 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=dWurm4eSt1vDZvl_Pdg-Iw - null null
+2025-06-17 15:43:21.770 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:43:21.770 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:43:21.772 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 26.1319ms
+2025-06-17 15:43:21.775 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 15:43:21.871 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:43:55.523 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 15:43:55.528 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:43:55.542 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 15:43:56.288 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 15:43:56.290 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 15:43:56.311 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 15:43:56.313 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 15:43:56.314 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 15:43:56.317 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 15:43:56.320 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 774.5201ms
+2025-06-17 15:43:56.321 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:43:56.321 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 798.448ms
+2025-06-17 15:43:56.324 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 15:43:56.348 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 15:43:56.383 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 15:43:56.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 61.2065ms
+2025-06-17 15:43:56.388 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryP7JJw8GE6aFv8AdD 359
+2025-06-17 15:43:56.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:43:56.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:43:56.402 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:43:56.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:43:56.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 10.5731ms
+2025-06-17 15:43:56.409 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 15:43:56.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:43:56.411 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 15.4497ms
+2025-06-17 15:43:56.413 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:43:56.414 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:43:56.414 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=dWurm4eSt1vDZvl_Pdg-Iw - 200 null null 34647.0967ms
+2025-06-17 15:43:56.416 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:43:56.419 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.2382ms
+2025-06-17 15:43:56.420 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:43:56.421 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:43:56.423 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 34.9318ms
+2025-06-17 15:43:56.423 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 25.1676ms
+2025-06-17 15:44:07.451 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/changepassword - application/x-www-form-urlencoded 343
+2025-06-17 15:44:07.459 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 15:44:07.473 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 15:44:07.476 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 25.1974ms
+2025-06-17 15:44:07.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:44:07.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:44:07.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:44:07.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:44:07.497 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 15:44:07.503 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:44:07.503 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 21.5267ms
+2025-06-17 15:44:07.508 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.1111ms
+2025-06-17 15:44:07.504 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:44:07.493 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 11.2798ms
+2025-06-17 15:44:07.512 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:44:07.515 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 32.8911ms
+2025-06-17 15:46:03.843 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 15:46:04.187 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 15:46:04.190 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 15:46:04.225 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 15:46:04.226 +05:30 [INF] Hosting environment: Development
+2025-06-17 15:46:04.227 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 15:46:04.805 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58311%2Fdevtools%2Fbrowser%2F67b8ebfd-65b3-4cf9-8fe7-b3a106e17649 - null null
+2025-06-17 15:46:05.004 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58311%2Fdevtools%2Fbrowser%2F67b8ebfd-65b3-4cf9-8fe7-b3a106e17649 - 302 0 null 204.2873ms
+2025-06-17 15:46:05.200 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 15:46:05.305 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 15:46:05.344 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:46:05.376 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:46:05.656 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 15:46:05.660 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:46:05.660 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:46:05.671 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 470.7404ms
+2025-06-17 15:46:05.682 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:46:05.683 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:46:05.686 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 15:46:05.685 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:46:05.691 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:46:05.691 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 9.4331ms
+2025-06-17 15:46:05.692 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 31.9657ms
+2025-06-17 15:46:05.695 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:46:05.706 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 46.7862ms
+2025-06-17 15:46:05.737 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 15:46:05.738 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.6348ms
+2025-06-17 15:46:05.745 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:05.750 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:05.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 15.4048ms
+2025-06-17 15:46:05.761 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 15:46:05.763 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 15:46:05.767 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:05.772 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:46:05.777 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:05.777 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 16.7803ms
+2025-06-17 15:46:05.777 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:46:05.782 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=n4hZjd7gensopH5IywWY-w - null null
+2025-06-17 15:46:05.784 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:05.786 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:46:05.788 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 24.3043ms
+2025-06-17 15:46:05.790 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 15:46:05.883 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:46:14.840 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 15:46:14.848 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:46:14.861 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 15:46:15.534 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 15:46:15.536 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 15:46:15.557 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 15:46:15.559 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 15:46:15.559 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 15:46:15.563 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 15:46:15.567 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 698.3377ms
+2025-06-17 15:46:15.568 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:46:15.569 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 729.2904ms
+2025-06-17 15:46:15.571 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 15:46:15.576 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 15:46:15.610 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 15:46:15.614 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 42.8821ms
+2025-06-17 15:46:15.619 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:46:15.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:46:15.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:46:15.629 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:46:15.631 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 11.1687ms
+2025-06-17 15:46:15.636 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:46:15.638 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:15.617 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryu89M27fM1N47rTA2 359
+2025-06-17 15:46:15.640 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:46:15.641 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=n4hZjd7gensopH5IywWY-w - 200 null null 9858.1755ms
+2025-06-17 15:46:15.643 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 23.7908ms
+2025-06-17 15:46:15.643 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:15.649 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.7072ms
+2025-06-17 15:46:15.658 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:15.660 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 43.1081ms
+2025-06-17 15:46:26.235 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/changepassword - application/x-www-form-urlencoded 343
+2025-06-17 15:46:26.243 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 15:46:26.257 +05:30 [INF] Start processing HTTP request POST https://localhost:7276/api/auth/changepassword
+2025-06-17 15:46:26.259 +05:30 [INF] Sending HTTP request POST https://localhost:7276/api/auth/changepassword
+2025-06-17 15:46:26.274 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7276/api/auth/changepassword - application/json; charset=utf-8 null
+2025-06-17 15:46:26.277 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:46:26.280 +05:30 [INF] AuthenticationScheme: Cookies was challenged.
+2025-06-17 15:46:26.282 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7276/api/auth/changepassword - 302 0 null 8.1608ms
+2025-06-17 15:46:26.286 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7276/?ReturnUrl=%2Fapi%2Fauth%2Fchangepassword - null null
+2025-06-17 15:46:26.287 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 15:46:26.288 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:46:26.290 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:46:26.293 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 15:46:26.294 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7276/?ReturnUrl=%2Fapi%2Fauth%2Fchangepassword - 200 null text/html; charset=utf-8 8.1326ms
+2025-06-17 15:46:26.298 +05:30 [INF] Received HTTP response headers after 36.5232ms - 200
+2025-06-17 15:46:26.299 +05:30 [INF] End processing HTTP request after 44.1689ms - 200
+2025-06-17 15:46:26.317 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 15:46:26.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/?status=PasswordChangedSuccessfully - null null
+2025-06-17 15:46:26.320 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/changepassword - 302 null text/html; charset=utf-8 86.4174ms
+2025-06-17 15:46:26.322 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 15:46:26.324 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:46:26.326 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 15:46:26.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/?status=PasswordChangedSuccessfully - 200 null text/html; charset=utf-8 7.4726ms
+2025-06-17 15:46:26.332 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:46:26.333 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:46:26.333 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:46:26.335 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:46:26.338 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 15:46:26.342 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 10.3774ms
+2025-06-17 15:46:26.344 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 12.0485ms
+2025-06-17 15:46:26.341 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:46:26.350 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.1507ms
+2025-06-17 15:46:26.351 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:46:26.353 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:46:26.354 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 21.6996ms
+2025-06-17 15:46:26.376 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 15:46:26.380 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:26.381 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:26.382 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 6.4779ms
+2025-06-17 15:46:26.386 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 15:46:26.389 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:26.390 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:26.391 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 5.4776ms
+2025-06-17 15:46:26.395 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=c5zfuVO09uzEp92EGnkc8g - null null
+2025-06-17 15:46:26.398 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:46:26.409 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:47:36.101 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 15:47:36.111 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:47:36.111 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 15:47:36.363 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 15:47:36.365 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 15:47:36.370 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 15:47:36.371 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 15:47:36.372 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 15:47:36.373 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 15:47:36.374 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 261.7614ms
+2025-06-17 15:47:36.375 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:47:36.375 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 274.199ms
+2025-06-17 15:47:36.377 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 15:47:36.380 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 15:47:36.383 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 15:47:36.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 6.4497ms
+2025-06-17 15:47:36.386 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryodNqgXgt7TwYmVaK 359
+2025-06-17 15:47:36.399 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:47:36.390 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:47:36.389 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:47:36.414 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:47:36.416 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 15:47:36.421 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.5385ms
+2025-06-17 15:47:36.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:47:36.405 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:47:36.420 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:47:36.421 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 32.9778ms
+2025-06-17 15:47:36.404 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:47:36.424 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 36.2697ms
+2025-06-17 15:47:36.425 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=c5zfuVO09uzEp92EGnkc8g - 200 null null 70029.2839ms
+2025-06-17 15:47:36.425 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:47:36.428 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:47:36.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 43.4877ms
+2025-06-17 15:47:36.435 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 48.6777ms
+2025-06-17 15:47:45.668 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/changepassword - application/x-www-form-urlencoded 344
+2025-06-17 15:47:45.673 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 15:47:51.424 +05:30 [INF] Start processing HTTP request POST https://localhost:7276/api/auth/changepassword
+2025-06-17 15:47:51.427 +05:30 [INF] Sending HTTP request POST https://localhost:7276/api/auth/changepassword
+2025-06-17 15:47:51.449 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7276/api/auth/changepassword - application/json; charset=utf-8 null
+2025-06-17 15:47:51.450 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:47:51.451 +05:30 [INF] AuthenticationScheme: Cookies was challenged.
+2025-06-17 15:47:51.451 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7276/api/auth/changepassword - 302 0 null 2.6959ms
+2025-06-17 15:47:51.454 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7276/?ReturnUrl=%2Fapi%2Fauth%2Fchangepassword - null null
+2025-06-17 15:47:51.455 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 15:47:51.455 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:47:51.456 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:47:51.459 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 15:47:51.460 +05:30 [INF] Received HTTP response headers after 31.9903ms - 200
+2025-06-17 15:47:51.460 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7276/?ReturnUrl=%2Fapi%2Fauth%2Fchangepassword - 200 null text/html; charset=utf-8 6.4841ms
+2025-06-17 15:47:51.461 +05:30 [INF] End processing HTTP request after 36.4664ms - 200
+2025-06-17 15:48:32.445 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 15:48:32.453 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/?status=PasswordChangedSuccessfully - null null
+2025-06-17 15:48:32.456 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 15:48:32.483 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/changepassword - 302 null text/html; charset=utf-8 46814.7747ms
+2025-06-17 15:48:34.133 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:48:34.140 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 15:48:34.141 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/?status=PasswordChangedSuccessfully - 200 null text/html; charset=utf-8 1687.7165ms
+2025-06-17 15:48:34.146 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:48:34.146 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:48:34.148 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:48:34.146 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:48:34.154 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 15:48:34.150 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 4.8495ms
+2025-06-17 15:48:34.161 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 15.1646ms
+2025-06-17 15:48:34.160 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:48:34.163 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.8222ms
+2025-06-17 15:48:34.166 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:48:34.168 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:48:34.169 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 22.8079ms
+2025-06-17 15:48:34.190 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 15:48:34.194 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:48:34.194 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:48:34.195 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 5.3862ms
+2025-06-17 15:48:34.198 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 15:48:34.201 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:48:34.203 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:48:34.204 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 5.7748ms
+2025-06-17 15:48:34.206 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=uY-TomVqp0IpHoKT7XHZgQ - null null
+2025-06-17 15:48:34.208 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:48:34.216 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:53:25.104 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 15:53:25.434 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 15:53:25.435 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 15:53:25.472 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 15:53:25.473 +05:30 [INF] Hosting environment: Development
+2025-06-17 15:53:25.473 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 15:53:26.360 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58354%2Fdevtools%2Fbrowser%2Ff3c11645-46bf-4e26-80ea-195bb45405bb - null null
+2025-06-17 15:53:26.568 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58354%2Fdevtools%2Fbrowser%2Ff3c11645-46bf-4e26-80ea-195bb45405bb - 302 0 null 211.8092ms
+2025-06-17 15:53:26.769 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 15:53:26.855 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 15:53:26.898 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:53:27.051 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:53:27.333 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 15:53:27.337 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:53:27.337 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:53:27.346 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 576.9845ms
+2025-06-17 15:53:27.362 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:53:27.366 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:53:27.369 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:53:27.371 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 34.6551ms
+2025-06-17 15:53:27.376 +05:30 [INF] Sending file. Request path: '/GoldLoanReappraisal.styles.css'. Physical path: 'C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal\obj\Debug\net8.0\scopedcss\bundle\GoldLoanReappraisal.styles.css'
+2025-06-17 15:53:27.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 200 8808 text/css 40.1572ms
+2025-06-17 15:53:28.105 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:53:28.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:53:28.111 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 6.7445ms
+2025-06-17 15:53:28.143 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 15:53:28.148 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.3834ms
+2025-06-17 15:53:28.155 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:53:28.157 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:53:28.159 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 16.3423ms
+2025-06-17 15:53:28.171 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 15:53:28.174 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 15:53:28.176 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:53:28.180 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:53:28.184 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:53:28.186 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 14.6875ms
+2025-06-17 15:53:28.186 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:53:28.188 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=4HzgX-3NAsQxBQUVun6Rsg - null null
+2025-06-17 15:53:28.190 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:53:28.192 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:53:28.193 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 19.8023ms
+2025-06-17 15:53:28.196 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 15:53:28.287 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:53:50.174 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 15:53:50.180 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:53:50.195 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 15:53:50.948 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 15:53:50.951 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 15:53:50.972 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 15:53:50.973 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 15:53:50.974 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 15:53:50.976 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 15:53:50.979 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 777.9493ms
+2025-06-17 15:53:50.980 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:53:50.982 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 808.2886ms
+2025-06-17 15:53:50.984 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 15:53:50.989 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 15:53:50.999 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 15:53:51.003 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.MissingMethodException: Cannot dynamically create an instance of type 'GoldLoanReappraisal.Components.Pages.ChangePassword'. Reason: No parameterless constructor defined.
+   at System.RuntimeType.ActivatorCache..ctor(RuntimeType rt)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)
+   at Microsoft.AspNetCore.Components.DefaultComponentActivator.CreateInstance(Type componentType)
+   at Microsoft.AspNetCore.Components.ComponentFactory.InstantiateComponent(IServiceProvider serviceProvider, Type componentType, IComponentRenderMode callerSpecifiedRenderMode, Nullable`1 parentComponentId)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.InstantiateChildComponentOnFrame(RenderTreeFrame[] frames, Int32 frameIndex, Int32 parentComponentId)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewComponentFrame(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewSubtree(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.ComputeDiff(Renderer renderer, RenderBatchBuilder batchBuilder, Int32 componentId, ArrayRange`1 oldTree, ArrayRange`1 newTree)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.AddToRenderQueue(Int32 componentId, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+   at Microsoft.AspNetCore.Components.ComponentBase.CallOnParametersSetAsync()
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderRootComponentAsync(Int32 componentId, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer.BeginRenderingComponent(IComponent component, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.RenderEndpointComponent(HttpContext httpContext, Type rootComponentType, ParameterView parameters, Boolean waitForQuiescence)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.<>c.<<InvokeAsync>b__10_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-17 15:53:51.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 500 null text/html; charset=utf-8 50.0574ms
+2025-06-17 15:53:51.039 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryGvBsBqMFepE1XrCs 359
+2025-06-17 15:53:51.050 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:53:51.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:53:51.059 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:53:51.061 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 12.242ms
+2025-06-17 15:53:51.071 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:53:51.072 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=4HzgX-3NAsQxBQUVun6Rsg - 200 null null 22883.6868ms
+2025-06-17 15:53:51.079 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:53:51.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.2154ms
+2025-06-17 15:53:51.081 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 42.3273ms
+2025-06-17 15:53:51.102 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.ico - null null
+2025-06-17 15:53:51.108 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:53:51.109 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:53:51.110 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.ico - 404 null text/html; charset=utf-8 8.5604ms
+2025-06-17 15:53:51.112 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.ico, Response status code: 404
+2025-06-17 15:55:04.141 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 15:55:04.488 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 15:55:04.489 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 15:55:04.529 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 15:55:04.531 +05:30 [INF] Hosting environment: Development
+2025-06-17 15:55:04.533 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 15:55:05.938 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58378%2Fdevtools%2Fbrowser%2Ffd670ec3-85a5-4a58-958a-33a51f73b5d0 - null null
+2025-06-17 15:55:06.142 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58378%2Fdevtools%2Fbrowser%2Ffd670ec3-85a5-4a58-958a-33a51f73b5d0 - 302 0 null 211.0482ms
+2025-06-17 15:55:06.341 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 15:55:06.431 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 15:55:06.471 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:55:06.505 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:55:06.784 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 15:55:06.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:55:06.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:55:06.798 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 456.8383ms
+2025-06-17 15:55:06.802 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 15:55:06.809 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 23.9946ms
+2025-06-17 15:55:06.810 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:55:06.813 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:55:06.815 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:55:06.815 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 29.7907ms
+2025-06-17 15:55:07.688 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:55:07.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:55:07.695 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 7.9417ms
+2025-06-17 15:55:07.728 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 15:55:07.736 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.1724ms
+2025-06-17 15:55:07.739 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:55:07.744 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:55:07.745 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 17.491ms
+2025-06-17 15:55:07.756 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 15:55:07.758 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 15:55:07.760 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:55:07.766 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:55:07.770 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:55:07.772 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:55:07.772 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 15.8113ms
+2025-06-17 15:55:07.776 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=cCaYfmqXMz8zD4Y6C_JS5w - null null
+2025-06-17 15:55:07.779 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 15:55:07.780 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:55:07.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 23.4255ms
+2025-06-17 15:55:07.784 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 15:55:07.885 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:55:23.291 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 15:55:23.296 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:55:23.310 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 15:55:23.965 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 15:55:23.967 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 15:55:23.989 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 15:55:23.990 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 15:55:23.990 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 15:55:23.993 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 15:55:23.996 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 682.7088ms
+2025-06-17 15:55:23.998 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 15:55:23.998 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 708.394ms
+2025-06-17 15:55:24.001 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 15:55:24.006 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 15:55:24.041 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 15:55:24.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 44.0433ms
+2025-06-17 15:55:24.049 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 15:55:24.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 15:55:24.049 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 15:55:24.061 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 15:55:24.068 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 19.0289ms
+2025-06-17 15:55:24.068 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 15:55:24.049 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 15:55:24.070 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 15:55:24.071 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:55:24.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 23.4664ms
+2025-06-17 15:55:24.073 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=cCaYfmqXMz8zD4Y6C_JS5w - 200 null null 16297.2461ms
+2025-06-17 15:55:24.072 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 15:55:24.046 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary16fMPqWbSTvsa5o6 359
+2025-06-17 15:55:24.078 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.0083ms
+2025-06-17 15:55:24.078 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 30.6909ms
+2025-06-17 15:55:24.080 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:55:24.091 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 15:55:24.093 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 46.887ms
+2025-06-17 15:55:31.335 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/changepassword - application/x-www-form-urlencoded 347
+2025-06-17 15:55:31.341 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 15:56:05.179 +05:30 [INF] Start processing HTTP request POST https://localhost:7276/api/auth/changepassword
+2025-06-17 15:56:05.182 +05:30 [INF] Sending HTTP request POST https://localhost:7276/api/auth/changepassword
+2025-06-17 15:56:05.226 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7276/api/auth/changepassword - application/json; charset=utf-8 null
+2025-06-17 15:56:05.229 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:56:05.231 +05:30 [INF] AuthenticationScheme: Cookies was challenged.
+2025-06-17 15:56:05.233 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7276/api/auth/changepassword - 302 0 null 6.6628ms
+2025-06-17 15:56:05.237 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7276/?ReturnUrl=%2Fapi%2Fauth%2Fchangepassword - null null
+2025-06-17 15:56:05.238 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 15:56:05.238 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 15:56:05.240 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 15:56:05.244 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 15:56:05.245 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7276/?ReturnUrl=%2Fapi%2Fauth%2Fchangepassword - 200 null text/html; charset=utf-8 8.3158ms
+2025-06-17 15:56:05.248 +05:30 [INF] Received HTTP response headers after 62.7582ms - 200
+2025-06-17 15:56:05.249 +05:30 [INF] End processing HTTP request after 72.6188ms - 200
+2025-06-17 16:06:42.167 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 16:06:42.498 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 16:06:42.499 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 16:06:42.532 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 16:06:42.534 +05:30 [INF] Hosting environment: Development
+2025-06-17 16:06:42.535 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 16:06:43.296 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58422%2Fdevtools%2Fbrowser%2F9301995c-604a-476d-8d2f-22c99ba597fe - null null
+2025-06-17 16:06:43.507 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58422%2Fdevtools%2Fbrowser%2F9301995c-604a-476d-8d2f-22c99ba597fe - 302 0 null 217.3131ms
+2025-06-17 16:06:43.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 16:06:43.793 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 16:06:43.836 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 16:06:43.990 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 16:06:44.275 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 16:06:44.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 16:06:44.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 16:06:44.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 585.6446ms
+2025-06-17 16:06:44.302 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 16:06:44.306 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 16:06:44.307 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 16:06:44.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 29.1679ms
+2025-06-17 16:06:44.324 +05:30 [INF] Sending file. Request path: '/GoldLoanReappraisal.styles.css'. Physical path: 'C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal\obj\Debug\net8.0\scopedcss\bundle\GoldLoanReappraisal.styles.css'
+2025-06-17 16:06:44.325 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 200 8808 text/css 45.9637ms
+2025-06-17 16:06:44.336 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 16:06:44.338 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 16:06:44.342 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 5.5963ms
+2025-06-17 16:06:44.374 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 16:06:44.378 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.1417ms
+2025-06-17 16:06:44.383 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:06:44.387 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:06:44.388 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 14.681ms
+2025-06-17 16:06:44.399 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 16:06:44.402 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 16:06:44.406 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:06:44.410 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:06:44.415 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:06:44.416 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 16:06:44.417 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 17.9663ms
+2025-06-17 16:06:44.421 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=0nsG_kUEZi-fGRfemQhbMg - null null
+2025-06-17 16:06:44.423 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:06:44.423 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:06:44.424 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 22.062ms
+2025-06-17 16:06:44.426 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 16:06:44.524 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 16:06:54.192 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 16:06:54.200 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 16:06:54.214 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 16:06:54.983 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 16:06:54.985 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 16:06:55.007 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 16:06:55.008 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 16:06:55.009 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 16:06:55.011 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 16:06:55.015 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 793.7681ms
+2025-06-17 16:06:55.017 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 16:06:55.017 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 825.5901ms
+2025-06-17 16:06:55.020 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 16:06:55.025 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 16:06:55.061 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 16:06:55.062 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 42.2329ms
+2025-06-17 16:06:55.067 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary9CSYnffwbUtBKxAa 359
+2025-06-17 16:06:55.069 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 16:06:55.069 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 16:06:55.080 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 16:06:55.069 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 16:06:55.074 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:06:55.071 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 16:06:55.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 13.873ms
+2025-06-17 16:06:55.084 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 16:06:55.085 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 16:06:55.091 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 16:06:55.088 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:06:55.092 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 23.2848ms
+2025-06-17 16:06:55.092 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 22.9607ms
+2025-06-17 16:06:55.093 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=0nsG_kUEZi-fGRfemQhbMg - 200 null null 10672.6543ms
+2025-06-17 16:06:55.099 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:06:55.102 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.7114ms
+2025-06-17 16:06:55.102 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 36.119ms
+2025-06-17 16:06:58.355 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/changepassword - application/x-www-form-urlencoded 339
+2025-06-17 16:06:58.361 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 16:14:37.823 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 16:14:38.156 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 16:14:38.157 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 16:14:38.190 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 16:14:38.192 +05:30 [INF] Hosting environment: Development
+2025-06-17 16:14:38.193 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 16:14:39.888 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58463%2Fdevtools%2Fbrowser%2F852b8713-f851-4f77-a4dd-733ef878f2fa - null null
+2025-06-17 16:14:40.093 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58463%2Fdevtools%2Fbrowser%2F852b8713-f851-4f77-a4dd-733ef878f2fa - 302 0 null 210.6799ms
+2025-06-17 16:14:40.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 16:14:40.386 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 16:14:40.427 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 16:14:40.580 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 16:14:40.857 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 16:14:40.859 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 16:14:40.859 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 16:14:40.870 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 578.1335ms
+2025-06-17 16:14:40.881 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 16:14:40.884 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 16:14:40.886 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 16:14:40.887 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 27.8338ms
+2025-06-17 16:14:40.893 +05:30 [INF] Sending file. Request path: '/GoldLoanReappraisal.styles.css'. Physical path: 'C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal\obj\Debug\net8.0\scopedcss\bundle\GoldLoanReappraisal.styles.css'
+2025-06-17 16:14:40.894 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 200 8808 text/css 34.8652ms
+2025-06-17 16:14:43.659 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 16:14:43.661 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 16:14:43.666 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 7.0919ms
+2025-06-17 16:14:43.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 16:14:43.709 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.9173ms
+2025-06-17 16:14:43.714 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:14:43.717 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:14:43.719 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 16.3795ms
+2025-06-17 16:14:43.729 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 16:14:43.732 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 16:14:43.734 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:14:43.740 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:14:43.743 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:14:43.745 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 16.3598ms
+2025-06-17 16:14:43.746 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 16:14:43.749 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=3rTbAsEB0SzJrmrThApPFg - null null
+2025-06-17 16:14:43.750 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:14:43.753 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:14:43.754 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 22.7902ms
+2025-06-17 16:14:43.756 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 16:14:43.848 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 16:15:31.142 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 16:15:31.150 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 16:15:31.164 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 16:15:31.913 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 16:15:31.916 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 16:15:31.937 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 16:15:31.939 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 16:15:31.939 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 16:15:31.942 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 16:15:31.945 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 776.5226ms
+2025-06-17 16:15:31.945 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 16:15:31.947 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 804.6723ms
+2025-06-17 16:15:31.950 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 16:15:31.956 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 16:15:31.963 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 16:15:31.966 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 16.5664ms
+2025-06-17 16:15:31.970 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary9mJuIRDD2CB5wVFw 359
+2025-06-17 16:15:31.979 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 16:15:31.979 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 16:15:31.985 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:15:31.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 16:15:31.991 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 16:15:31.979 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 16:15:31.993 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 16:15:31.993 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 14.7275ms
+2025-06-17 16:15:31.995 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 16:15:31.994 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 16:15:31.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 18.036ms
+2025-06-17 16:15:31.997 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:15:31.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 18.5177ms
+2025-06-17 16:15:32.001 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=3rTbAsEB0SzJrmrThApPFg - 200 null null 48252.1974ms
+2025-06-17 16:15:32.002 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:15:32.005 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.1054ms
+2025-06-17 16:15:32.007 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 36.7197ms
+2025-06-17 16:15:44.055 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword? - null null
+2025-06-17 16:15:44.060 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 16:15:44.062 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 16:15:44.063 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword? - 200 null text/html; charset=utf-8 8.486ms
+2025-06-17 16:15:44.069 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 16:15:44.070 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 16:15:44.070 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 16:15:44.072 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 16:15:44.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 10.3821ms
+2025-06-17 16:15:44.081 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 16:15:44.082 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 16:15:44.087 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 16:15:44.088 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 18.0351ms
+2025-06-17 16:15:44.089 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 16:15:44.089 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.7957ms
+2025-06-17 16:15:44.091 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 21.2463ms
+2025-06-17 16:16:12.253 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 16:16:12.256 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 16:16:12.257 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 3.9037ms
+2025-06-17 16:16:12.265 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-06-17 16:16:12.270 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:16:12.272 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:16:12.272 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/.well-known/appspecific/com.chrome.devtools.json - 404 null text/html; charset=utf-8 7.6742ms
+2025-06-17 16:16:12.274 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/bootstrap/bootstrap.min.css.map - null null
+2025-06-17 16:16:12.275 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-06-17 16:16:12.276 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:16:12.278 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:16:12.279 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/bootstrap/bootstrap.min.css.map - 404 null text/html; charset=utf-8 4.3919ms
+2025-06-17 16:16:12.280 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/bootstrap/bootstrap.min.css.map, Response status code: 404
+2025-06-17 16:16:19.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword? - null null
+2025-06-17 16:16:19.444 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 16:16:19.446 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 16:16:19.448 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword? - 200 null text/html; charset=utf-8 9.926ms
+2025-06-17 16:16:19.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 16:16:19.457 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 16:16:19.467 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-06-17 16:16:19.469 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 16:16:19.457 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 16:16:19.477 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:16:19.478 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.6542ms
+2025-06-17 16:16:19.485 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:16:19.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/bootstrap/bootstrap.min.css.map - null null
+2025-06-17 16:16:19.481 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 26.0005ms
+2025-06-17 16:16:19.476 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 16:16:19.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/.well-known/appspecific/com.chrome.devtools.json - 404 null text/html; charset=utf-8 23.912ms
+2025-06-17 16:16:19.492 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:16:19.494 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 16:16:19.496 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-06-17 16:16:19.498 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:16:19.498 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 42.2642ms
+2025-06-17 16:16:19.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/bootstrap/bootstrap.min.css.map - 404 null text/html; charset=utf-8 16.4667ms
+2025-06-17 16:16:19.505 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/bootstrap/bootstrap.min.css.map, Response status code: 404
+2025-06-17 16:31:39.100 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 16:31:39.431 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 16:31:39.432 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 16:31:39.466 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 16:31:39.468 +05:30 [INF] Hosting environment: Development
+2025-06-17 16:31:39.468 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 16:31:40.210 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58555%2Fdevtools%2Fbrowser%2Fef623683-6152-43cb-bd86-d6eebd17fe09 - null null
+2025-06-17 16:31:40.414 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58555%2Fdevtools%2Fbrowser%2Fef623683-6152-43cb-bd86-d6eebd17fe09 - 302 0 null 208.0394ms
+2025-06-17 16:31:40.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 16:31:40.710 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 16:31:40.753 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 16:31:40.907 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 16:31:41.197 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 16:31:41.198 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 16:31:41.198 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 16:31:41.211 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 596.685ms
+2025-06-17 16:31:41.223 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 16:31:41.226 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 16:31:41.228 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 16:31:41.230 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 32.0486ms
+2025-06-17 16:31:41.235 +05:30 [INF] Sending file. Request path: '/GoldLoanReappraisal.styles.css'. Physical path: 'C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal\obj\Debug\net8.0\scopedcss\bundle\GoldLoanReappraisal.styles.css'
+2025-06-17 16:31:41.236 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 200 8808 text/css 38.6028ms
+2025-06-17 16:31:41.246 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 16:31:41.248 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 16:31:41.252 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 6.2513ms
+2025-06-17 16:31:41.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 16:31:41.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.272ms
+2025-06-17 16:31:41.302 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:31:41.306 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:31:41.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 20.1174ms
+2025-06-17 16:31:41.319 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 16:31:41.322 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 16:31:41.323 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:31:41.330 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:31:41.333 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:31:41.335 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 15.9943ms
+2025-06-17 16:31:41.336 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 16:31:41.342 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=KMTX0CulSx1NZU_WG5Y7dw - null null
+2025-06-17 16:31:41.343 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:31:41.345 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:31:41.347 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 25.6913ms
+2025-06-17 16:31:41.350 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 16:31:41.444 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 16:32:04.410 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 16:32:04.415 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 16:32:04.431 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 16:32:05.163 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 16:32:05.164 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 16:32:05.188 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 16:32:05.190 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 16:32:05.190 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 16:32:05.193 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 16:32:05.197 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 762.1029ms
+2025-06-17 16:32:05.199 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 16:32:05.199 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 789.1502ms
+2025-06-17 16:32:05.203 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 16:32:05.210 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 16:32:05.241 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 16:32:05.243 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 40.1987ms
+2025-06-17 16:32:05.245 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryzwTYEALwVrg2BDiQ 359
+2025-06-17 16:32:05.254 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 16:32:05.263 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:32:05.253 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 16:32:05.266 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 16:32:05.259 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 16:32:05.254 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 16:32:05.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 16.6847ms
+2025-06-17 16:32:05.270 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 16:32:05.275 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 16:32:05.277 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 16:32:05.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 23.6729ms
+2025-06-17 16:32:05.278 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 24.5814ms
+2025-06-17 16:32:05.280 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:32:05.278 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 16:32:05.282 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 36.8043ms
+2025-06-17 16:32:05.283 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=KMTX0CulSx1NZU_WG5Y7dw - 200 null null 23941.3503ms
+2025-06-17 16:32:05.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.4534ms
+2025-06-17 16:32:25.990 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/changepassword - application/x-www-form-urlencoded 321
+2025-06-17 16:32:26.000 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 16:32:26.004 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 16:32:26.006 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/changepassword - 400 null text/plain 16.9078ms
+2025-06-17 16:32:26.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.ico - null null
+2025-06-17 16:32:26.026 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:32:26.027 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 16:32:26.029 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.ico - 404 null text/html; charset=utf-8 8.3865ms
+2025-06-17 16:32:26.031 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.ico, Response status code: 404
+2025-06-17 17:27:28.498 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 17:27:28.833 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 17:27:28.834 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 17:27:28.867 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 17:27:28.868 +05:30 [INF] Hosting environment: Development
+2025-06-17 17:27:28.869 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 17:27:29.620 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58946%2Fdevtools%2Fbrowser%2F680637fe-c240-4495-a9a7-73ba6f2bc905 - null null
+2025-06-17 17:27:29.829 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58946%2Fdevtools%2Fbrowser%2F680637fe-c240-4495-a9a7-73ba6f2bc905 - 302 0 null 212.2146ms
+2025-06-17 17:27:30.023 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 17:27:30.112 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 17:27:30.153 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 17:27:30.307 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 17:27:30.599 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 17:27:30.603 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 17:27:30.612 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 589.1734ms
+2025-06-17 17:27:30.603 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 17:27:30.620 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 17:27:30.625 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 17:27:30.627 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 17:27:30.628 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 24.7108ms
+2025-06-17 17:27:30.638 +05:30 [INF] Sending file. Request path: '/GoldLoanReappraisal.styles.css'. Physical path: 'C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal\obj\Debug\net8.0\scopedcss\bundle\GoldLoanReappraisal.styles.css'
+2025-06-17 17:27:30.639 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 200 8808 text/css 36.3691ms
+2025-06-17 17:27:30.656 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 17:27:30.659 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 17:27:30.663 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 6.7503ms
+2025-06-17 17:27:30.698 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 17:27:30.709 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.3122ms
+2025-06-17 17:27:30.713 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:27:30.717 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:27:30.718 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 20.3684ms
+2025-06-17 17:27:30.733 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 17:27:30.735 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 17:27:30.738 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:27:30.742 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 17:27:30.747 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:27:30.748 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 15.7024ms
+2025-06-17 17:27:30.749 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 17:27:30.753 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=2OpQeyhbQDeo_iME9lzGyw - null null
+2025-06-17 17:27:30.754 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:27:30.757 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 17:27:30.760 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 24.9756ms
+2025-06-17 17:27:30.766 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 17:27:30.860 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 17:27:48.900 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 17:27:48.905 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 17:27:48.920 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 17:27:49.667 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 17:27:49.669 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 17:27:49.692 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 17:27:49.693 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 17:27:49.694 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 17:27:49.697 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 17:27:49.700 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 776.8388ms
+2025-06-17 17:27:49.701 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 17:27:49.702 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 802.229ms
+2025-06-17 17:27:49.706 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 17:27:49.712 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 17:27:49.743 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 17:27:49.745 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 39.2665ms
+2025-06-17 17:27:49.748 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundarySHqy5ISsv63YyISN 359
+2025-06-17 17:27:49.759 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 17:27:49.750 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 17:27:49.751 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 17:27:49.770 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 17:27:49.760 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:27:49.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 21.8459ms
+2025-06-17 17:27:49.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 20.5908ms
+2025-06-17 17:27:49.751 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 17:27:49.778 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:27:49.783 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=2OpQeyhbQDeo_iME9lzGyw - 200 null null 19029.7709ms
+2025-06-17 17:27:49.784 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 17:27:49.784 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.934ms
+2025-06-17 17:27:49.786 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 17:27:49.787 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:27:49.788 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 17:27:49.788 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 40.767ms
+2025-06-17 17:27:49.789 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 37.9828ms
+2025-06-17 17:28:21.411 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/changepassword - application/x-www-form-urlencoded 318
+2025-06-17 17:28:21.421 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 17:28:21.425 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 17:28:21.426 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/changepassword - 400 null text/plain 15.1937ms
+2025-06-17 17:28:21.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.ico - null null
+2025-06-17 17:28:21.447 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 17:28:21.449 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 17:28:21.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.ico - 404 null text/html; charset=utf-8 9.1854ms
+2025-06-17 17:28:21.451 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.ico, Response status code: 404
+2025-06-17 17:30:42.607 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 17:30:42.948 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 17:30:42.950 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 17:30:42.984 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 17:30:42.986 +05:30 [INF] Hosting environment: Development
+2025-06-17 17:30:42.986 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 17:30:43.661 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58981%2Fdevtools%2Fbrowser%2Ff5a25f46-e99b-46d3-96d7-0da26fdeff7c - null null
+2025-06-17 17:30:43.874 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A58981%2Fdevtools%2Fbrowser%2Ff5a25f46-e99b-46d3-96d7-0da26fdeff7c - 302 0 null 217.1036ms
+2025-06-17 17:30:44.080 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 17:30:44.171 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 17:30:44.217 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 17:30:44.254 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 17:30:44.534 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 17:30:44.538 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 17:30:44.538 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 17:30:44.549 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 470.0258ms
+2025-06-17 17:30:44.554 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 17:30:44.562 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 17:30:44.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 25.0239ms
+2025-06-17 17:30:44.563 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 17:30:44.567 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 17:30:44.568 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 30.1093ms
+2025-06-17 17:30:44.587 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 17:30:44.589 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 17:30:44.592 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 5.3056ms
+2025-06-17 17:30:44.629 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 17:30:44.631 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.6429ms
+2025-06-17 17:30:44.640 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:30:44.644 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:30:44.646 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 18.462ms
+2025-06-17 17:30:44.655 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 17:30:44.658 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 17:30:44.660 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:30:44.665 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 17:30:44.668 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:30:44.669 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 14.4959ms
+2025-06-17 17:30:44.670 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 17:30:44.676 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=PuGad0_HGa-Dg21ZC9MTAw - null null
+2025-06-17 17:30:44.678 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:30:44.681 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 17:30:44.683 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 25.3426ms
+2025-06-17 17:30:44.687 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 17:30:44.780 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 17:31:07.716 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 17:31:07.722 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 17:31:07.737 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 17:31:08.398 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 17:31:08.400 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 17:31:08.422 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 17:31:08.425 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 17:31:08.426 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 17:31:08.429 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 17:31:08.432 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 691.3522ms
+2025-06-17 17:31:08.433 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 17:31:08.434 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 718.4501ms
+2025-06-17 17:31:08.436 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 17:31:08.443 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 17:31:08.480 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 17:31:08.483 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 46.4225ms
+2025-06-17 17:31:08.486 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundarySSiJZmjd0ikTAvpO 359
+2025-06-17 17:31:08.488 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 17:31:08.494 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:31:08.491 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 17:31:08.498 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 17:31:08.488 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 17:31:08.504 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 14.7415ms
+2025-06-17 17:31:08.509 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 20.6952ms
+2025-06-17 17:31:08.488 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 17:31:08.518 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:31:08.520 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:31:08.522 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=PuGad0_HGa-Dg21ZC9MTAw - 200 null null 23846.104ms
+2025-06-17 17:31:08.523 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 37.0149ms
+2025-06-17 17:31:08.523 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 17:31:08.524 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.3651ms
+2025-06-17 17:31:08.528 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 17:31:08.530 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 17:31:08.530 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 41.6885ms
+2025-06-17 17:31:12.646 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/changepassword - application/x-www-form-urlencoded 341
+2025-06-17 17:31:12.652 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 17:31:12.666 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 17:31:12.668 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 22.65ms
+2025-06-17 17:31:12.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 17:31:12.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 17:31:12.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 17:31:12.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 8.1562ms
+2025-06-17 17:31:12.683 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 17:31:12.692 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 17:31:12.693 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 17:31:12.694 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.2673ms
+2025-06-17 17:31:12.694 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 21.561ms
+2025-06-17 17:32:13.805 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 17:32:14.148 +05:30 [INF] Now listening on: https://localhost:7276
+2025-06-17 17:32:14.150 +05:30 [INF] Now listening on: http://localhost:5269
+2025-06-17 17:32:14.186 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 17:32:14.188 +05:30 [INF] Hosting environment: Development
+2025-06-17 17:32:14.189 +05:30 [INF] Content root path: C:\Sachin\GoldLoanReappraisal\GoldLoanReappraisal
+2025-06-17 17:32:14.860 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A59008%2Fdevtools%2Fbrowser%2F1eeed762-59ce-4365-b653-3d7cf6ad84cf - null null
+2025-06-17 17:32:15.070 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A59008%2Fdevtools%2Fbrowser%2F1eeed762-59ce-4365-b653-3d7cf6ad84cf - 302 0 null 214.024ms
+2025-06-17 17:32:15.262 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-06-17 17:32:15.382 +05:30 [INF] Executing endpoint '/ (/)'
+2025-06-17 17:32:15.423 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 17:32:15.460 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 17:32:15.746 +05:30 [INF] Executed endpoint '/ (/)'
+2025-06-17 17:32:15.748 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - null null
+2025-06-17 17:32:15.748 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 17:32:15.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 493.3443ms
+2025-06-17 17:32:15.756 +05:30 [INF] The file /GoldLoanReappraisal.styles.css was not modified
+2025-06-17 17:32:15.767 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 17:32:15.767 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/GoldLoanReappraisal.styles.css - 304 null text/css 19.1185ms
+2025-06-17 17:32:15.769 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 17:32:15.772 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 17:32:15.772 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 24.0835ms
+2025-06-17 17:32:15.801 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 17:32:15.803 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 17:32:15.807 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 6.4252ms
+2025-06-17 17:32:15.843 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_blazor/initializers - null null
+2025-06-17 17:32:15.848 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.3959ms
+2025-06-17 17:32:15.856 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:32:15.860 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:32:15.863 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_blazor/initializers - 200 null application/json; charset=utf-8 20.8753ms
+2025-06-17 17:32:15.874 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-06-17 17:32:15.876 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/favicon.png - null null
+2025-06-17 17:32:15.880 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:32:15.885 +05:30 [INF] Executing endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 17:32:15.888 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:32:15.889 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 15.6709ms
+2025-06-17 17:32:15.890 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-17 17:32:15.895 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7276/_blazor?id=DN5EtLQez_wplnckDudf_g - null null
+2025-06-17 17:32:15.897 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:32:15.898 +05:30 [INF] Executed endpoint '/error/{StatusCode:int} (/error/{StatusCode:int})'
+2025-06-17 17:32:15.900 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/favicon.png - 404 null text/html; charset=utf-8 24.1504ms
+2025-06-17 17:32:15.902 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7276/favicon.png, Response status code: 404
+2025-06-17 17:32:16.001 +05:30 [INF] Testing serilogs: SELECT TOP 1 Question, Answer FROM login_question ORDER BY NEWID()
+2025-06-17 17:32:33.717 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/auth/login - application/x-www-form-urlencoded 34
+2025-06-17 17:32:33.726 +05:30 [INF] Executing endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 17:32:33.743 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginModel) on controller GoldLoanReappraisal.Controllers.AuthController (GoldLoanReappraisal).
+2025-06-17 17:32:34.410 +05:30 [INF] User '578479' has 'PendingActivation' status. Forcing password change.
+2025-06-17 17:32:34.412 +05:30 [INF] API: User validation service returned status: "PasswordChangeRequired"
+2025-06-17 17:32:34.438 +05:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-17 17:32:34.439 +05:30 [INF] API: SignInAsync completed for user '578479'.
+2025-06-17 17:32:34.440 +05:30 [INF] API: Redirecting user '578479' to change password page.
+2025-06-17 17:32:34.444 +05:30 [INF] Executing LocalRedirectResult, redirecting to /changepassword.
+2025-06-17 17:32:34.448 +05:30 [INF] Executed action GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal) in 701.0294ms
+2025-06-17 17:32:34.449 +05:30 [INF] Executed endpoint 'GoldLoanReappraisal.Controllers.AuthController.Login (GoldLoanReappraisal)'
+2025-06-17 17:32:34.450 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/auth/login - 302 0 null 733.2011ms
+2025-06-17 17:32:34.452 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/changepassword - null null
+2025-06-17 17:32:34.460 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 17:32:34.498 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 17:32:34.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 48.4464ms
+2025-06-17 17:32:34.503 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryl0l4DIhzwiHQnWj8 359
+2025-06-17 17:32:34.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 17:32:34.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 17:32:34.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 17:32:34.515 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 10.1077ms
+2025-06-17 17:32:34.508 +05:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:32:34.526 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:32:34.512 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 17:32:34.530 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:7276/_blazor?id=DN5EtLQez_wplnckDudf_g - 200 null null 18634.7495ms
+2025-06-17 17:32:34.531 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 17:32:34.534 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 17:32:34.535 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 29.3002ms
+2025-06-17 17:32:34.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.2072ms
+2025-06-17 17:32:34.542 +05:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-17 17:32:34.543 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/_blazor/disconnect - 200 0 null 39.6613ms
+2025-06-17 17:32:37.361 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/changepassword - application/x-www-form-urlencoded 348
+2025-06-17 17:32:37.367 +05:30 [INF] Executing endpoint '/changepassword (/changepassword)'
+2025-06-17 17:32:37.379 +05:30 [INF] Executed endpoint '/changepassword (/changepassword)'
+2025-06-17 17:32:37.381 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/changepassword - 200 null text/html; charset=utf-8 20.1211ms
+2025-06-17 17:32:37.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - null null
+2025-06-17 17:32:37.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-06-17 17:32:37.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 17:32:37.391 +05:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-17 17:32:37.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 16.9569ms
+2025-06-17 17:32:37.402 +05:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-17 17:32:37.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.9593ms
+2025-06-17 17:32:37.406 +05:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-17 17:32:37.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/blazor.web.js - 304 null text/javascript 23.0044ms

@@ -1,0 +1,71 @@
+﻿@page "/user-management"
+@layout EmptyLayout
+@attribute [Authorize(Roles = "Admin,Region,Zone")]
+@using GoldLoanReappraisal.Components.Layout
+@using GoldLoanReappraisal.Data.Models
+@using GoldLoanReappraisal.Data.Services
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+
+@inject UserManagementService UserManagementService
+@inject AuthenticationStateProvider AuthStateProvider
+
+<PageTitle>User Management</PageTitle>
+
+<div class="user-management-container">
+    <h1>User Management</h1>
+    <p class="text-muted">The following users are visible to you based on your role.</p>
+    <hr />
+
+    @if (_users == null)
+    {
+        <p><em>Loading user list...</em></p>
+    }
+    else if (!_users.Any())
+    {
+        <div class="alert alert-info">No other users are visible to you.</div>
+    }
+    else
+    {
+        <div class="table-container">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>User Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in _users)
+                    {
+                        <tr>
+                            <td>@user.USERID</td>
+                            <td>@user.USERTYPE</td>
+                            <td>@user.USERSTATUS</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private IEnumerable<VisibleUser>? _users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var currentUserId = authState.User.Identity?.Name;
+
+        if (!string.IsNullOrEmpty(currentUserId))
+        {
+            _users = await UserManagementService.GetVisibleUsersAsync(currentUserId);
+        }
+        else
+        {
+            _users = new List<VisibleUser>();
+        }
+    }
+}

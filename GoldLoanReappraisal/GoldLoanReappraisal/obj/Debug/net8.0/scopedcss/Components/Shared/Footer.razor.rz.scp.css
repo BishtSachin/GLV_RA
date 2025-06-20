@@ -1,0 +1,13 @@
+/* Components/Shared/Footer.razor.css */
+.app-footer[b-ljctxame8d] {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e7e7e7;
+    padding: 1rem 0;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+    .app-footer p[b-ljctxame8d] {
+        margin: 0;
+    }

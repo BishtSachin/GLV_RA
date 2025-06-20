@@ -1,0 +1,43 @@
+﻿/* In Components/Pages/UserManagement.razor.css */
+
+/* This wrapper will give the page its own background color */
+.user-management-container {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f6f9; /* A clean, light grey background */
+    padding: 2rem;
+}
+
+h1 {
+    font-weight: 600;
+    color: #1e293b; /* A dark blue-charcoal text color */
+}
+
+/* A container for the table to give it a card-like appearance */
+.table-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    padding: 1.5rem;
+}
+
+.table {
+    margin-bottom: 0; /* Remove default bottom margin from bootstrap table */
+}
+
+    .table thead th {
+        border-bottom-width: 2px;
+        font-weight: 500;
+        color: #495057;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+
+/* Style for the text when the table is empty */
+.alert-info {
+    background-color: #e2f3ff;
+    border-color: #b6e3ff;
+    color: #0d6efd;
+}

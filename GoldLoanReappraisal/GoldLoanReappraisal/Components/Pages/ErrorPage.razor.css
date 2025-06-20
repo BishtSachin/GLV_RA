@@ -1,0 +1,49 @@
+﻿/* In Components/Pages/ErrorPage.razor.css */
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+    /* Set the default text color to white for high contrast */
+    color: white;
+    /* Add a subtle shadow to all text to make it pop off the gradient */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.error-code {
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 1;
+    /* Make the number slightly transparent white */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.error-message {
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+    font-weight: 300; /* Use a lighter font weight to contrast with the error code */
+    max-width: 600px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Style the 'Return to Login' button for a modern look */
+.btn-primary {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 10px 25px;
+    font-weight: 500;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: white;
+        color: white;
+    }

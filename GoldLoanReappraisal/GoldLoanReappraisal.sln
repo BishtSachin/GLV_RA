@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldLoanReappraisal", "GoldLoanReappraisal\GoldLoanReappraisal.csproj", "{7DAA9D1D-5B1C-4EC4-8BF4-8DDF0BA6D6C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldLoanReappraisal.Client", "GoldLoanReappraisal.Client\GoldLoanReappraisal.Client.csproj", "{DB7DEAA8-8271-49DB-B458-A530DED217B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DAA9D1D-5B1C-4EC4-8BF4-8DDF0BA6D6C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAA9D1D-5B1C-4EC4-8BF4-8DDF0BA6D6C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAA9D1D-5B1C-4EC4-8BF4-8DDF0BA6D6C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAA9D1D-5B1C-4EC4-8BF4-8DDF0BA6D6C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB7DEAA8-8271-49DB-B458-A530DED217B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB7DEAA8-8271-49DB-B458-A530DED217B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB7DEAA8-8271-49DB-B458-A530DED217B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB7DEAA8-8271-49DB-B458-A530DED217B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBC0BEF6-16E9-4A4F-96FA-D79F21CDF110}
+	EndGlobalSection
+EndGlobal

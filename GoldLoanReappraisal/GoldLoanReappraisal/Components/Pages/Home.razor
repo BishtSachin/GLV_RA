@@ -1,0 +1,111 @@
+﻿@page "/"
+@using GoldLoanReappraisal.Components.Layout
+@using GoldLoanReappraisal.Data.Models
+@layout EmptyLayout
+@rendermode InteractiveServer
+
+@inject GoldLoanReappraisal.Data.Services.CaptchaService CaptchaService
+
+<PageTitle>Login</PageTitle>
+
+<div class="login-container">
+    <div class="login-card">
+        <h3 class="text-center mb-4" style="font-weight: 600;">Login</h3>
+
+        <form action="api/auth/login" method="post" autocomplete="off">
+
+            <div class="mb-3">
+                <label for="userid" class="form-label">User ID</label>
+                <input id="userid" name="UserId" class="form-control" autocomplete="off" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" type="password" name="Password" class="form-control" autocomplete="new-password" required />
+            </div>
+
+            <div class="mb-4">
+                <label for="captcha" class="form-label">
+                    CAPTCHA:
+                    @if (currentCaptcha != null)
+                    {
+                        <strong>@currentCaptcha.Question</strong>
+                    }
+                    else
+                    {
+                        <span class="text-danger">Could not load CAPTCHA.</span>
+                    }
+                </label>
+                <input id="captcha" @bind="captchaAnswer" class="form-control" placeholder="Enter the answer" autocomplete="off" required />
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary" disabled="@(!isCaptchaCorrect)">Submit</button>
+            </div>
+        </form>
+
+        @if (!string.IsNullOrWhiteSpace(message))
+        {
+            <div class="alert @(isSuccess ? "alert-success" : "alert-danger") mt-3 text-center" role="alert">
+                @message
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private string? captchaAnswer;
+    private string? message;
+    private bool isSuccess; // Used to control the alert color (green for success, red for error)
+    private CaptchaItem? currentCaptcha;
+
+    private bool isCaptchaCorrect => currentCaptcha != null && !string.IsNullOrWhiteSpace(captchaAnswer) && string.Equals(captchaAnswer, currentCaptcha.Answer, StringComparison.OrdinalIgnoreCase);
+
+    // This gets the 'status' message from the URL (e.g., ?status=InvalidPassword)
+    [SupplyParameterFromQuery]
+    public string? status { get; set; }
+
+    // This gets the 'attempts' count from the URL (e.g., &attempts=4)
+    [SupplyParameterFromQuery]
+    public int? attempts { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // This logic now runs when the page loads to check for any status message in the URL
+        if (!string.IsNullOrWhiteSpace(status))
+        {
+            isSuccess = false; // Default to error color
+            switch (status)
+            {
+                case "LogoutSuccessful":
+                    message = "You have been logged out successfully!";
+                    isSuccess = true; // Set to success color
+                    break;
+
+                case "InvalidPassword":
+                    message = $"Invalid Password. You have {attempts} attempts remaining.";
+                    break;
+
+                case "AccountLocked":
+                    message = "Your account is now locked due to too many failed attempts. Please contact the administrator.";
+                    break;
+
+                case "PasswordChangedSuccessfully": // <-- ADD THIS CASE
+                    message = "Password updated successfully. Please log in with your new credentials.";
+                    isSuccess = true;
+                    break;
+
+                default:
+                    message = "Invalid User ID or Password.";
+                    break;
+            }
+        }
+
+        await LoadNewCaptchaAsync();
+    }
+
+    private async Task LoadNewCaptchaAsync()
+    {
+        currentCaptcha = await CaptchaService.GetRandomCaptchaAsync();
+    }
+}

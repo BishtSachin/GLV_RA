@@ -1,0 +1,69 @@
+/* In Components/Shared/Header.razor.css */
+.app-header[b-bfny75xhn4] {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 100%;
+}
+
+    .app-header .container[b-bfny75xhn4] {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* This is key for spacing the items */
+        width: 100%;
+        padding: 0 1rem; /* Add some padding on the sides */
+    }
+
+/* --- NEW FLEXBOX LAYOUT STYLES --- */
+
+/* Left and Right sections will take up equal space, pushing the center to the middle */
+.header-left[b-bfny75xhn4], .header-right[b-bfny75xhn4] {
+    flex: 1;
+}
+
+.header-center[b-bfny75xhn4] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-right[b-bfny75xhn4] {
+    display: flex;
+    justify-content: flex-end; /* Pushes the logout link to the far right */
+}
+
+/* --- Existing element styles --- */
+
+.app-logo[b-bfny75xhn4] {
+    height: 40px;
+    margin-right: 15px;
+}
+
+h1[b-bfny75xhn4] {
+    font-size: 1.5rem;
+    color: #003366;
+    margin: 0;
+    font-weight: 600;
+    white-space: nowrap; /* Prevents title from wrapping */
+}
+
+.user-info[b-bfny75xhn4] {
+    /* We no longer need 'margin-left: auto' */
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+    .user-info span[b-bfny75xhn4] {
+        margin-right: 15px;
+        white-space: nowrap;
+    }
+
+    .user-info .btn-link[b-bfny75xhn4] {
+        color: #007bff;
+        text-decoration: none;
+        padding: 0;
+        vertical-align: baseline;
+        white-space: nowrap;
+    }

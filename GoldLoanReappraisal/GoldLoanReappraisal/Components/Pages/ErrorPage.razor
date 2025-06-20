@@ -1,0 +1,26 @@
+﻿@page "/error/{StatusCode:int}"
+@using GoldLoanReappraisal.Components.Layout
+@layout EmptyLayout
+
+<PageTitle>Error @StatusCode</PageTitle>
+
+<div class="error-container">
+    <div class="error-code">@StatusCode</div>
+    <div class="error-message">@GetErrorMessage()</div>
+    <a href="/" class="btn btn-primary mt-4">Return to Login</a>
+</div>
+
+@code {
+    [Parameter]
+    public int StatusCode { get; set; }
+
+    private string GetErrorMessage()
+    {
+        return StatusCode switch
+        {
+            404 => "Sorry, the page you are looking for could not be found.",
+            403 => "Access Denied. You do not have permission to view this page.",
+            _ => "An unexpected error has occurred. Please try again later."
+        };
+    }
+}

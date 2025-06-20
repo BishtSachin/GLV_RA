@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GoldLoanReappraisal
+build_property.RootNamespace = GoldLoanReappraisal
+build_property.ProjectDir = C:\Sachin\GLV_RA\GoldLoanReappraisal\GoldLoanReappraisal\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Sachin\GLV_RA\GoldLoanReappraisal\GoldLoanReappraisal
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Layout/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRW1wdHlMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Pages/ChangePassword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGFuZ2VQYXNzd29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-byr14t8n2s
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYXNoYm9hcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-7ko8a5e0l5
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Pages/ErrorPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvclBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wdgsizzy7z
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-32hbyyzta5
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Pages/UserManagement.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyTWFuYWdlbWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-7piiadelno
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Shared/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcRm9vdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ljctxame8d
+
+[C:/Sachin/GLV_RA/GoldLoanReappraisal/GoldLoanReappraisal/Components/Shared/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-bfny75xhn4

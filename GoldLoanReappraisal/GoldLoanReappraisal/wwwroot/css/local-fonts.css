@@ -1,0 +1,63 @@
+﻿/* This is the content for wwwroot/css/local-fonts.css */
+/* Placed at the top of wwwroot/app.css */
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
+/* Add these new rules to the end of wwwroot/css/local-fonts.css */
+
+/* Roboto Regular */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+/* Roboto Medium */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+}
+/* Roboto Bold */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
