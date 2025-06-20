@@ -17,7 +17,6 @@ namespace GoldLoanReappraisal.Data.Services
             _logger = logger;
         }
 
-        // The method signature and return type have changed
         public async Task<PagedResult<VisibleUser>> GetVisibleUsersAsync(string requestorUserId, int pageNumber, int pageSize)
         {
             _logger.LogInformation("Fetching page {PageNumber} of visible users for requestor '{RequestorId}'.", pageNumber, requestorUserId);
@@ -30,7 +29,7 @@ namespace GoldLoanReappraisal.Data.Services
                     parameters.Add("p_Requestor_UserId", requestorUserId, OracleDbType.NVarchar2, ParameterDirection.Input);
                     parameters.Add("p_PageNumber", pageNumber, OracleDbType.Int32, ParameterDirection.Input);
                     parameters.Add("p_PageSize", pageSize, OracleDbType.Int32, ParameterDirection.Input);
-                    parameters.Add("p_Total_Records", dbType: OracleDbType.Int32, direction: ParameterDirection.Output);
+                    parameters.Add("p_Total_Records", dbType: OracleDbType.Decimal, direction: ParameterDirection.Output);
                     parameters.Add("p_UserList_Cursor", dbType: OracleDbType.RefCursor, direction: ParameterDirection.Output);
 
                     var users = await connection.QueryAsync<VisibleUser>(
@@ -39,14 +38,16 @@ namespace GoldLoanReappraisal.Data.Services
                         commandType: CommandType.StoredProcedure
                     );
 
-                    int totalRecords = parameters.Get<int>("p_Total_Records");
+                    // THIS IS THE FIX: Get the Oracle-specific decimal type first, then its value.
+                    var oracleTotalRecords = parameters.Get<Oracle.ManagedDataAccess.Types.OracleDecimal>("p_Total_Records");
+                    int totalRecords = (int)oracleTotalRecords.Value;
 
                     return new PagedResult<VisibleUser> { Items = users, TotalCount = totalRecords };
                 }
                 catch (Exception ex)
                 {
                     _logger.LogError(ex, "DATABASE ERROR: Failed to fetch visible users with stored procedure SP_GetVisibleUsers.");
-                    return new PagedResult<VisibleUser>(); // Return an empty result on error
+                    return new PagedResult<VisibleUser>();
                 }
             }
         }

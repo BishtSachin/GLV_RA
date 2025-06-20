@@ -1,0 +1,2 @@
+C:\Sachin\GLV_RA\GoldLoanReappraisal\GoldLoanReappraisal.Client\wwwroot\index.html
+C:\Sachin\GLV_RA\GoldLoanReappraisal\GoldLoanReappraisal.Client\wwwroot\script.js

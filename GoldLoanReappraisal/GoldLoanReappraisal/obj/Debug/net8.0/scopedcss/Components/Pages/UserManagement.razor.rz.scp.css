@@ -1,19 +1,25 @@
-/* In Components/Pages/UserManagement.razor.css */
-
-/* This wrapper will give the page its own background color */
 .user-management-container[b-7piiadelno] {
     width: 100%;
     height: 100%;
-    background-color: #f4f6f9; /* A clean, light grey background */
+    background-color: #f4f6f9;
     padding: 2rem;
+    /* Add these Flexbox styles to center the content */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to the top */
+}
+
+/* This new class will hold all the content and have a max-width */
+.content-wrapper[b-7piiadelno] {
+    width: 100%;
+    max-width: 1200px; /* Adjust this value as needed */
 }
 
 h1[b-7piiadelno] {
     font-weight: 600;
-    color: #1e293b; /* A dark blue-charcoal text color */
+    color: #1e293b;
 }
 
-/* A container for the table to give it a card-like appearance */
 .table-container[b-7piiadelno] {
     background-color: #ffffff;
     border-radius: 8px;
@@ -22,22 +28,56 @@ h1[b-7piiadelno] {
 }
 
 .table[b-7piiadelno] {
-    margin-bottom: 0; /* Remove default bottom margin from bootstrap table */
+    margin-bottom: 0;
 }
 
     .table thead th[b-7piiadelno] {
-        border-bottom-width: 2px;
-        font-weight: 500;
+        background-color: #f8f9fa;
+        border-bottom: 2px solid #dee2e6;
+        font-weight: 600;
         color: #495057;
+        padding: 1rem;
     }
 
     .table td[b-7piiadelno] {
         vertical-align: middle;
+        padding: 1rem;
+        color: #333;
     }
 
-/* Style for the text when the table is empty */
 .alert-info[b-7piiadelno] {
     background-color: #e2f3ff;
     border-color: #b6e3ff;
     color: #0d6efd;
 }
+
+.pager-container[b-7piiadelno] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-top: 1px solid #dee2e6;
+}
+
+.pager-text[b-7piiadelno] {
+    font-weight: 500;
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+.pager-container .btn[b-7piiadelno] {
+    border-radius: 50px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+    .pager-container .btn:disabled[b-7piiadelno] {
+        opacity: 0.6;
+    }
+
+    .pager-container .btn:not(:disabled):hover[b-7piiadelno] {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }

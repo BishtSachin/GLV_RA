@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "GoldLoanReappraisal.Client",
   "resources": {
-    "hash": "sha256-zJwIJ6VM373GSR93MZFrPdPB+tAnzpR7zjgbZHLeaOg=",
+    "hash": "sha256-184nYwlEVIAO32wyA14PXhAcnEGb4ViYfZ3Sy2INX1E=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-YyxJV6dv935qHoQAmjB+2qRjHeGpm4SyWxE0T/KvsIE="
     },
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-flmBXVpp8uDpWBNEJuRkqo3Qnir1KADo5a1rCQISkPs=",
       "netstandard.wasm": "sha256-iuCVrIBmiGbXpNVvYkBmSt16BNEjbbD82vYrtHimftc=",
       "System.Private.CoreLib.wasm": "sha256-1Xa/xaUoA/iRxpDqZPUUzL8QaTawkoJLhGmxtRv9ZJI=",
-      "GoldLoanReappraisal.Client.wasm": "sha256-cRqtDaA1If6Ri56nO7tzMbcGXqmk+zLEOG2dd+UgQHI="
+      "GoldLoanReappraisal.Client.wasm": "sha256-dV0RKazJhmznQABHqkPDFGERBXTevZfn3SxMB00W/I0="
     },
     "pdb": {
-      "GoldLoanReappraisal.Client.pdb": "sha256-GUO1W+m9Vx//UAPA7NLPngsfsYXiKr7n3Ynm9Cv0Xjg="
+      "GoldLoanReappraisal.Client.pdb": "sha256-YZwktNKwgmC7QT3UH6+G5D10zYANQBbXsYxE1nuWDOI="
     }
   },
   "cacheBootResources": true,

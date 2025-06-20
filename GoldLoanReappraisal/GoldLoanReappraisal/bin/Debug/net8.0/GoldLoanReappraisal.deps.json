@@ -16,7 +16,6 @@
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "8.0.16",
           "Microsoft.Data.SqlClient": "6.0.2",
           "Oracle.ManagedDataAccess.Core": "23.8.0",
-          "Radzen.Blazor": "7.1.1",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Sinks.File": "7.0.0"
         },
@@ -576,18 +575,6 @@
           "lib/net8.0/Oracle.ManagedDataAccess.dll": {
             "assemblyVersion": "23.1.0.0",
             "fileVersion": "23.1.0.0"
-          }
-        }
-      },
-      "Radzen.Blazor/7.1.1": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.16",
-          "Microsoft.AspNetCore.Components.Web": "8.0.16"
-        },
-        "runtime": {
-          "lib/net8.0/Radzen.Blazor.dll": {
-            "assemblyVersion": "7.1.1.0",
-            "fileVersion": "7.1.1.0"
           }
         }
       },
@@ -1213,13 +1200,6 @@
       "sha512": "sha512-wgCcndZnwbWySb4Bm0UOAJO8wOagFAs1IG8Aa4ZX38D9N9MrySfryGKJd+yajb2CDGXv/yL3x7yES6mmF4OMWw==",
       "path": "oracle.manageddataaccess.core/23.8.0",
       "hashPath": "oracle.manageddataaccess.core.23.8.0.nupkg.sha512"
-    },
-    "Radzen.Blazor/7.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-d7jFQBRItXoEcoocPR4yivIkklRzuxlzMcji27Gqqy7yNw9nFzX8uKwgkCaKKAhAQPKGrfLQFbn1GikvpnQrGw==",
-      "path": "radzen.blazor/7.1.1",
-      "hashPath": "radzen.blazor.7.1.1.nupkg.sha512"
     },
     "Serilog/4.2.0": {
       "type": "package",

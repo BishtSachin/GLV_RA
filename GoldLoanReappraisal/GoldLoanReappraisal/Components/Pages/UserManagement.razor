@@ -9,63 +9,115 @@
 
 @inject UserManagementService UserManagementService
 @inject AuthenticationStateProvider AuthStateProvider
-
+@inject IJSRuntime JS
+@rendermode InteractiveServer
 <PageTitle>User Management</PageTitle>
 
 <div class="user-management-container">
-    <h1>User Management</h1>
-    <p class="text-muted">The following users are visible to you based on your role.</p>
-    <hr />
+    <div class="content-wrapper text-center">
+        <h1>User Management</h1>
+        <p class="text-muted">The following users are visible to you based on your role.</p>
+        <hr />
 
-    @if (_users == null)
-    {
-        <p><em>Loading user list...</em></p>
-    }
-    else if (!_users.Any())
-    {
-        <div class="alert alert-info">No other users are visible to you.</div>
-    }
-    else
-    {
-        <div class="table-container">
-            <table class="table table-striped table-hover">
-                <thead>
-                    <tr>
-                        <th>User ID</th>
-                        <th>User Type</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var user in _users)
-                    {
+        @if (_users == null)
+        {
+            <p><em>Loading user list...</em></p>
+        }
+        else if (!_users.Any())
+        {
+            <div class="alert alert-info">No other users are visible to you.</div>
+        }
+        else
+        {
+            <div class="table-container">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
                         <tr>
-                            <td>@user.USERID</td>
-                            <td>@user.USERTYPE</td>
-                            <td>@user.USERSTATUS</td>
+                            <th>User ID</th>
+                            <th>User Type</th>
+                            <th>Status</th>
+                            <th>Action</th>
                         </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    }
+                    </thead>
+                    <tbody>
+                        @foreach (var user in _users)
+                        {
+                            <tr>
+                                <td>@user.USERID</td>
+                                <td>@user.USERTYPE</td>
+                                <td>@user.USERSTATUS</td>
+                                <td>
+                                    <button name="EditViewButton" class="btn btn-sm btn-outline-primary" @onclick="@(() => TriggerAlert(user.USERID))">Edit/View</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="pager-container mt-4">
+                <button class="btn btn-secondary" @onclick="PreviousPage" disabled="@(_currentPage == 1)">
+                    &laquo; Previous
+                </button>
+                <span class="pager-text">
+                    Page @_currentPage of @TotalPages
+                </span>
+                <button class="btn btn-secondary" @onclick="NextPage" disabled="@(_currentPage >= TotalPages)">
+                    Next &raquo;
+                </button>
+            </div>
+        }
+    </div>
 </div>
 
 @code {
     private IEnumerable<VisibleUser>? _users;
+    private string? _currentUserId;
+    private int _totalUsers = 0;
+    private int _currentPage = 1;
+    private readonly int _pageSize = 10;
+    private int TotalPages => (int)Math.Ceiling(_totalUsers / (double)_pageSize);
 
     protected override async Task OnInitializedAsync()
     {
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
-        var currentUserId = authState.User.Identity?.Name;
-
-        if (!string.IsNullOrEmpty(currentUserId))
+        _currentUserId = authState.User.Identity?.Name;
+        if (!string.IsNullOrEmpty(_currentUserId))
         {
-            _users = await UserManagementService.GetVisibleUsersAsync(currentUserId);
+            await LoadDataForPage(_currentPage);
         }
         else
         {
             _users = new List<VisibleUser>();
         }
+    }
+
+    private async Task LoadDataForPage(int pageNumber)
+    {
+        if (string.IsNullOrEmpty(_currentUserId)) return;
+        var result = await UserManagementService.GetVisibleUsersAsync(_currentUserId, pageNumber, _pageSize);
+        _users = result.Items;
+        _totalUsers = result.TotalCount;
+        _currentPage = pageNumber;
+    }
+
+    private async Task PreviousPage()
+    {
+        if (_currentPage > 1)
+        {
+            await LoadDataForPage(_currentPage - 1);
+        }
+    }
+
+    private async Task NextPage()
+    {
+        if (_currentPage < TotalPages)
+        {
+            await LoadDataForPage(_currentPage + 1);
+        }
+    }
+
+    private async Task TriggerAlert(string userId)
+    {
+        await JS.InvokeVoidAsync("alert", $"Hello user: {userId}");
     }
 }
