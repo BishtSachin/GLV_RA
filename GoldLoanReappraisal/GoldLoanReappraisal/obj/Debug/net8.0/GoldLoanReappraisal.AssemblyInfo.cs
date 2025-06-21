@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoldLoanReappraisal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67e59485b939ef4fd90621d65bd563941376617b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4747f3ae0e290758e05c0a859b7fad2cd3c88f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoldLoanReappraisal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoldLoanReappraisal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

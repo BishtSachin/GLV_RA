@@ -95,6 +95,10 @@
                     isSuccess = true;
                     break;
 
+                case "ConcurrentLoginDetected": // <-- ADD THIS CASE
+                    message = "User is already logged in. Kindly log out or try after 30 mins.";
+                    break;
+
                 default:
                     message = "Invalid User ID or Password.";
                     break;

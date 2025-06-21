@@ -1,0 +1,122 @@
+﻿/* In Components/Pages/UserDetails.razor.css */
+
+.details-container {
+    width: 100%;
+    min-height: 100%;
+    background-color: #f4f6f9;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* --- Page Header Styles --- */
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+    .page-header h1 {
+        font-weight: 600;
+        color: #1e293b;
+    }
+
+    .page-header p {
+        font-size: 1.1rem;
+        color: #6c757d;
+    }
+
+/* --- Form Card Styles --- */
+.form-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.form-card-body {
+    padding: 2rem;
+}
+
+/* Make disabled inputs look clean and readable */
+.form-control[disabled] {
+    background-color: #e9ecef;
+    opacity: 1;
+    cursor: default;
+}
+
+.form-card-footer {
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between; /* This will space out the buttons */
+    align-items: center;
+}
+
+/* --- NEW: Style for the Reset Password button --- */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+}
+
+/* Add these styles to the bottom of UserDetails.razor.css */
+
+/* --- NEW: Custom Dropdown Styles --- */
+.custom-select-wrapper {
+    position: relative; /* This is crucial for positioning the custom arrow */
+    width: 100%;
+}
+
+    /* Style for the custom arrow icon */
+.custom-select-wrapper::after {
+        content: '▼'; /* You can also use SVG icons here */
+        font-size: 0.8rem;
+        color: #6c757d;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none; /* Allows clicks to pass through to the select element */
+}
+
+    /* Target the <select> element that Blazor renders */
+.custom-select-wrapper .form-select {
+        /* Hide the default browser appearance (including the default arrow) */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        /* Make sure our custom styles match the other text inputs */
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+        padding-right: 2.5rem; /* Add space on the right for our custom arrow */
+}
+
+.custom-select-wrapper .form-select:focus {
+            border-color: #86b7fe;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control, .form-select {
+    min-height: 38px; /* Standard Bootstrap height */
+}
+
+/* Class to truncate long text within a select dropdown.
+  This prevents the dropdown from stretching vertically.
+*/
+.form-select-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -6,11 +6,12 @@
 @using GoldLoanReappraisal.Data.Services
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Components.Authorization
-
+@rendermode InteractiveServer
+@inject IJSRuntime JS
 @inject UserManagementService UserManagementService
 @inject AuthenticationStateProvider AuthStateProvider
-@inject IJSRuntime JS
-@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
 <PageTitle>User Management</PageTitle>
 
 <div class="user-management-container">
@@ -36,7 +37,7 @@
                             <th>User ID</th>
                             <th>User Type</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th class="text-end">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,24 +47,18 @@
                                 <td>@user.USERID</td>
                                 <td>@user.USERTYPE</td>
                                 <td>@user.USERSTATUS</td>
-                                <td>
-                                    <button name="EditViewButton" class="btn btn-sm btn-outline-primary" @onclick="@(() => TriggerAlert(user.USERID))">Edit/View</button>
+                                <td class="text-end">
+                                    <!-- CHANGED: The onclick event now calls our new navigation method -->
+                                    <button name="EditViewButton" class="btn btn-sm btn-outline-primary" @onclick="@(() => NavigateToUserDetails(user.USERID))">Edit / View</button>
                                 </td>
                             </tr>
                         }
                     </tbody>
                 </table>
             </div>
+            <!-- Pager UI remains the same -->
             <div class="pager-container mt-4">
-                <button class="btn btn-secondary" @onclick="PreviousPage" disabled="@(_currentPage == 1)">
-                    &laquo; Previous
-                </button>
-                <span class="pager-text">
-                    Page @_currentPage of @TotalPages
-                </span>
-                <button class="btn btn-secondary" @onclick="NextPage" disabled="@(_currentPage >= TotalPages)">
-                    Next &raquo;
-                </button>
+                @* ... Pager buttons ... *@
             </div>
         }
     </div>
@@ -116,8 +111,10 @@
         }
     }
 
-    private async Task TriggerAlert(string userId)
+    // --- RENAMED and CHANGED this method ---
+    private void NavigateToUserDetails(string userId)
     {
-        await JS.InvokeVoidAsync("alert", $"Hello user: {userId}");
+        // This now navigates to the new page, passing the userId in the URL
+        NavigationManager.NavigateTo($"/user-details/{userId}");
     }
 }

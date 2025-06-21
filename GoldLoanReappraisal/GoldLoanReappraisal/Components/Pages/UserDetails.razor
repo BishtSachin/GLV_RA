@@ -1,0 +1,254 @@
+﻿@page "/user-details/{UserId}"
+@layout EmptyLayout
+@attribute [Authorize(Roles = "Admin,Region,Zone")]
+@using System.ComponentModel.DataAnnotations
+@using GoldLoanReappraisal.Components.Layout
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using GoldLoanReappraisal.Data.Models
+@using GoldLoanReappraisal.Data.Services
+
+@inject UserProfileService UserProfileService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@rendermode InteractiveServer
+
+<PageTitle>User Details - @UserId</PageTitle>
+
+<div class="details-container">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h1>User Details</h1>
+            <p>View and manage the details for user: <strong>@UserId</strong></p>
+        </div>
+
+        @if (_databaseProfile == null)
+        {
+            <p><em>Loading user profile...</em></p>
+        }
+        else
+        {
+            <div class="form-card">
+                <EditForm Model="_editModel" OnValidSubmit="HandleSave" FormName="UserDetailsForm">
+                    <DataAnnotationsValidator />
+
+                    <div class="form-card-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">User ID</label>
+                                <input value="@_databaseProfile.UserId" class="form-control" disabled />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">User Type</label>
+                                <input value="@_databaseProfile.UserType" class="form-control" disabled />
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Zone</label>
+                                <input value="@($"{_databaseProfile.ZoneName} - {_databaseProfile.ZoneCode}")" class="form-control" disabled />
+                                @if (_isEditMode)
+                                {
+                                    <InputSelect @bind-Value="_editModel.ZoneCode" @bind-Value:after="OnZoneChanged" class="form-select form-select-truncate mt-2">
+                                        <option value="">-- Change Zone --</option>
+                                        @if (_zoneList != null)
+                                        {
+                                            @foreach (var zone in _zoneList)
+                                            {
+                                                <option value="@zone.Code">@zone.Name</option>
+                                            }
+                                        }
+                                    </InputSelect>
+                                }
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Region</label>
+                                <input value="@($"{_databaseProfile.RegionName} - {_databaseProfile.RegionCode}")" class="form-control" disabled />
+                                @if (_isEditMode)
+                                {
+                                    <InputSelect @bind-Value="_editModel.RegionCode" @bind-Value:after="OnRegionChanged" class="form-select form-select-truncate mt-2" disabled="@(_regionList == null || !_regionList.Any())">
+                                        <option value="">-- Change Region --</option>
+                                        @if (_regionList != null)
+                                        {
+                                            @foreach (var region in _regionList)
+                                            {
+                                                <option value="@region.Code">@region.Name</option>
+                                            }
+                                        }
+                                    </InputSelect>
+                                }
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Branch</label>
+                                <input value="@($"{_databaseProfile.BranchName} - {_databaseProfile.BranchCode}")" class="form-control" disabled />
+                                @if (_isEditMode)
+                                {
+                                    <InputSelect @bind-Value="_editModel.BranchCode" class="form-select form-select-truncate mt-2" disabled="@(_branchList == null || !_branchList.Any())">
+                                        <option value="">-- Change Branch --</option>
+                                        @if (_branchList != null)
+                                        {
+                                            @foreach (var branch in _branchList)
+                                            {
+                                                <option value="@branch.Code">@branch.Name</option>
+                                            }
+                                        }
+                                    </InputSelect>
+                                }
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Status</label>
+                                @if (_isEditMode)
+                                {
+                                    <InputSelect @bind-Value="_editModel.UserStatus" class="form-select">
+                                        @foreach (var statusOption in _statusOptions)
+                                        {
+                                            <option value="@statusOption">@statusOption</option>
+                                        }
+                                    </InputSelect>
+                                }
+                                else
+                                {
+                                    <input value="@_databaseProfile.UserStatus" class="form-control" disabled />
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-card-footer">
+                        @if (_isEditMode)
+                        {
+                            <div> <button type="button" class="btn btn-danger" @onclick="HandleResetPassword">Reset Password</button> </div>
+                            <div> <button type="button" class="btn btn-outline-secondary" @onclick="ToggleEditMode">Cancel</button> <button type="submit" class="btn btn-success">Save Changes</button> </div>
+                        }
+                        else
+                        {
+                            <div></div>
+                            <div> <button type="button" class="btn btn-primary" @onclick="ToggleEditMode">Edit User</button> </div>
+                        }
+                    </div>
+
+                </EditForm>
+            </div>
+        }
+    </div>
+</div>
+@code {
+    [Parameter]
+    public string UserId { get; set; } = "";
+
+    // The true, original data from the database. Used for display only.
+    private UserProfileModel? _databaseProfile;
+
+    // The model used EXCLUSIVELY for form binding during an edit.
+    private UserEditModel _editModel = new();
+
+    // Data for the dropdown lists remains the same
+    private IEnumerable<BranchRegionZoneList>? _branchList;
+    private IEnumerable<BranchRegionZoneList>? _regionList;
+    private IEnumerable<BranchRegionZoneList>? _zoneList;
+    private bool _isEditMode = false;
+    private List<string> _statusOptions = new() { "Active", "Inactive" };
+
+    // This is the new class for our form's data binding
+    public class UserEditModel
+    {
+        public string? ZoneCode { get; set; }
+        public string? RegionCode { get; set; }
+        public string? BranchCode { get; set; }
+        public string? UserStatus { get; set; }
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await LoadUserProfile();
+    }
+
+    private async Task LoadUserProfile()
+    {
+        _databaseProfile = await UserProfileService.GetUserProfileByIdAsync(UserId);
+
+        // When data is loaded, populate the dropdown lists
+        if (_databaseProfile != null)
+        {
+            _zoneList = await UserProfileService.GetAllZonesAsync();
+            _regionList = await UserProfileService.GetAllRegionsAsync(_databaseProfile.ZoneCode);
+            _branchList = await UserProfileService.GetAllBranchesAsync(_databaseProfile.RegionCode, _databaseProfile.ZoneCode);
+        }
+    }
+
+    private void ToggleEditMode()
+    {
+        _isEditMode = !_isEditMode;
+
+        if (_isEditMode)
+        {
+            // When entering edit mode, populate the _editModel from the database model.
+            _editModel = new UserEditModel
+            {
+                ZoneCode = _databaseProfile.ZoneCode,
+                RegionCode = _databaseProfile.RegionCode,
+                BranchCode = _databaseProfile.BranchCode,
+                UserStatus = _databaseProfile.UserStatus
+            };
+        }
+    }
+
+    private async Task OnZoneChanged()
+    {
+        // When zone changes, clear child values IN THE EDIT MODEL.
+        _editModel.RegionCode = string.Empty;
+        _editModel.BranchCode = string.Empty;
+        _regionList = Enumerable.Empty<BranchRegionZoneList>();
+        _branchList = Enumerable.Empty<BranchRegionZoneList>();
+
+        if (!string.IsNullOrEmpty(_editModel.ZoneCode))
+        {
+            _regionList = await UserProfileService.GetAllRegionsAsync(_editModel.ZoneCode);
+        }
+    }
+
+    private async Task OnRegionChanged()
+    {
+        // When region changes, clear branch value IN THE EDIT MODEL.
+        _editModel.BranchCode = string.Empty;
+        _branchList = Enumerable.Empty<BranchRegionZoneList>();
+
+        if (!string.IsNullOrEmpty(_editModel.ZoneCode) && !string.IsNullOrEmpty(_editModel.RegionCode))
+        {
+            _branchList = await UserProfileService.GetAllBranchesAsync(_editModel.RegionCode, _editModel.ZoneCode);
+        }
+    }
+
+    private async Task HandleSave()
+    {
+        // When saving, you would map the values from _editModel back to your main model
+        // and send it to a service to be updated in the database.
+
+        // For example:
+        _databaseProfile.ZoneCode = _editModel.ZoneCode;
+        _databaseProfile.RegionCode = _editModel.RegionCode;
+        _databaseProfile.BranchCode = _editModel.BranchCode;
+        _databaseProfile.UserStatus = _editModel.UserStatus;
+        _databaseProfile.ZoneName = _zoneList?.FirstOrDefault(z => z.Code == _editModel.ZoneCode)?.Name;
+        _databaseProfile.RegionName = _regionList?.FirstOrDefault(r => r.Code == _editModel.RegionCode)?.Name;
+        _databaseProfile.BranchName = _branchList?.FirstOrDefault(b => b.Code == _editModel.BranchCode)?.Name;
+
+        // await UserProfileService.UpdateUserAsync(_databaseProfile); // <-- The actual save operation
+
+        await JSRuntime.InvokeAsync<object>("alert", "Data has been saved!");
+        _isEditMode = false;
+        await LoadUserProfile(); // Reload fresh data from DB
+    }
+
+    // No changes needed for HandleResetPassword
+    private async Task HandleResetPassword()
+    {
+        var confirmed = await JSRuntime.InvokeAsync<bool>("confirm", $"Are you sure you want to reset the password for user {UserId}?");
+        if (confirmed)
+        {
+            await JSRuntime.InvokeAsync<object>("alert", "Password has been reset (functionality pending).");
+        }
+    }
+}

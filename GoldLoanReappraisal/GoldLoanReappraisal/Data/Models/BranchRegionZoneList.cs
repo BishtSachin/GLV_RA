@@ -1,0 +1,8 @@
+﻿namespace GoldLoanReappraisal.Data.Models
+{
+    public class BranchRegionZoneList
+    {
+        public string Code { get; set; }
+        public string Name { get; set; }
+    }
+}
